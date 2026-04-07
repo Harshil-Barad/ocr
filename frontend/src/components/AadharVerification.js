@@ -9,7 +9,7 @@ import { Upload, X, FileText, AlertCircle, CheckCircle2 } from 'lucide-react';
   const [results, setResults] = useState([]);
   const [error, setError] = useState(null);
   const [dragActive, setDragActive] = useState(false);
-  
+   
   const handleDrag = useCallback((e) => {
     e.preventDefault();
     e.stopPropagation();
