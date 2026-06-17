@@ -11,7 +11,7 @@ import { Upload, X, FileText, AlertCircle, CheckCircle2 } from 'lucide-react';
   const [dragActive, setDragActive] = useState(false);
     
   const handleDrag = useCallback((e) => {
-    e.preventDefault();
+    e.preventDefault(); 
     e.stopPropagation();
     if (e.type === "dragenter" || e.type === "dragover") {
       setDragActive(true);
